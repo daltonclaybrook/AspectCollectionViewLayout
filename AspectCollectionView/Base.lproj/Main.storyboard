@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="N3I-bd-fu0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Images-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AspectCollectionView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="s7k-5k-fNB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="5fw-qD-UIo">
+                                    <size key="itemSize" width="143" height="136"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageCell" id="YKH-8Y-Foq" customClass="ImageCell" customModule="AspectCollectionView" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="143" height="136"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="143" height="136"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UoX-4j-aEl">
+                                                    <rect key="frame" x="0.0" y="0.0" width="143" height="136"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="UoX-4j-aEl" firstAttribute="leading" secondItem="YKH-8Y-Foq" secondAttribute="leading" id="GUC-lF-IcR"/>
+                                            <constraint firstItem="UoX-4j-aEl" firstAttribute="top" secondItem="YKH-8Y-Foq" secondAttribute="top" id="gUV-ZD-K5w"/>
+                                            <constraint firstAttribute="trailing" secondItem="UoX-4j-aEl" secondAttribute="trailing" id="tH1-od-8Zn"/>
+                                            <constraint firstAttribute="bottom" secondItem="UoX-4j-aEl" secondAttribute="bottom" id="x4q-fa-sff"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="UoX-4j-aEl" id="zf4-u5-9Me"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="4QF-60-Qkl"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="QqE-7I-H0g"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="s7k-5k-fNB" secondAttribute="trailing" id="BGT-d8-xSe"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="s7k-5k-fNB" secondAttribute="bottom" id="CVC-hy-x7j"/>
+                            <constraint firstItem="s7k-5k-fNB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="P88-V1-aFX"/>
+                            <constraint firstItem="s7k-5k-fNB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yax-Sy-9hz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Images" id="AeD-Jq-XY7">
+                        <barButtonItem key="rightBarButtonItem" title="Columns" id="2Pg-gJ-nZs">
+                            <connections>
+                                <action selector="columnsButtonPressed:" destination="BYZ-38-t0r" id="LFu-Ph-Tot"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="s7k-5k-fNB" id="a5M-8L-mUU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="608.79999999999995" y="330.58470764617692"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9SN-tK-m3W">
+            <objects>
+                <navigationController id="N3I-bd-fu0" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="seW-W2-LLI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hM2-1x-UGh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ONR-gS-vr5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-250" y="332"/>
+        </scene>
+    </scenes>
+</document>
