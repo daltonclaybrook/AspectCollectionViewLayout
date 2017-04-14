@@ -73,11 +73,7 @@ extension ViewController: UICollectionViewDataSource {
     }
 }
 
-extension ViewController: AspectDataSource, AspectLayoutDataSource {
-    
-    func sizeForImage(atIndexPath indexPath: IndexPath) -> CGSize {
-        return images[indexPath.item].size
-    }
+extension ViewController: AspectLayoutDataSource {
     
     func aspectLayout(_ layout: AspectCollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return images[indexPath.item].size

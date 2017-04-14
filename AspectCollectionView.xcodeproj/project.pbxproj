@@ -12,7 +12,6 @@
 		75C8CC561E8CB94A00127CD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75C8CC541E8CB94A00127CD6 /* Main.storyboard */; };
 		75C8CC581E8CB94A00127CD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75C8CC571E8CB94A00127CD6 /* Assets.xcassets */; };
 		75C8CC5B1E8CB94A00127CD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75C8CC591E8CB94A00127CD6 /* LaunchScreen.storyboard */; };
-		75C8CC641E8CBA6300127CD6 /* AspectCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C8CC631E8CBA6300127CD6 /* AspectCollectionViewDelegate.swift */; };
 		75C8CC661E8CC2A800127CD6 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C8CC651E8CC2A800127CD6 /* ImageCell.swift */; };
 		BE3FC0E31E8D45D500423F46 /* AspectCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3FC0E21E8D45D500423F46 /* AspectCollectionViewLayout.swift */; };
 		EB60709539D3632704E84F71 /* Pods_AspectCollectionView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DF3BB60889199C2E4CD000F /* Pods_AspectCollectionView.framework */; };
@@ -27,7 +26,6 @@
 		75C8CC571E8CB94A00127CD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75C8CC5A1E8CB94A00127CD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75C8CC5C1E8CB94A00127CD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		75C8CC631E8CBA6300127CD6 /* AspectCollectionViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AspectCollectionViewDelegate.swift; sourceTree = "<group>"; };
 		75C8CC651E8CC2A800127CD6 /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		A8A24F73533C35D02C35A01A /* Pods-AspectCollectionView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AspectCollectionView.release.xcconfig"; path = "Pods/Target Support Files/Pods-AspectCollectionView/Pods-AspectCollectionView.release.xcconfig"; sourceTree = "<group>"; };
 		BE3FC0E21E8D45D500423F46 /* AspectCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AspectCollectionViewLayout.swift; sourceTree = "<group>"; };
@@ -91,7 +89,6 @@
 		75C8CC621E8CBA3600127CD6 /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				75C8CC631E8CBA6300127CD6 /* AspectCollectionViewDelegate.swift */,
 				BE3FC0E21E8D45D500423F46 /* AspectCollectionViewLayout.swift */,
 			);
 			name = CollectionView;
@@ -231,7 +228,6 @@
 			files = (
 				75C8CC531E8CB94A00127CD6 /* ViewController.swift in Sources */,
 				75C8CC661E8CC2A800127CD6 /* ImageCell.swift in Sources */,
-				75C8CC641E8CBA6300127CD6 /* AspectCollectionViewDelegate.swift in Sources */,
 				75C8CC511E8CB94A00127CD6 /* AppDelegate.swift in Sources */,
 				BE3FC0E31E8D45D500423F46 /* AspectCollectionViewLayout.swift in Sources */,
 			);
