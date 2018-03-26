@@ -14,7 +14,7 @@ struct Image {
     
     init(size: CGSize) {
         self.size = size
-        let urlString = "http://lorempixel.com/\(Int(size.width))/\(Int(size.height))/sports/"
+        let urlString = "https://picsum.photos/\(Int(size.width))/\(Int(size.height))"
         self.url = URL(string: urlString)!
     }
 }
